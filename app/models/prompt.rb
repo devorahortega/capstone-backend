@@ -1,3 +1,3 @@
 class Prompt < ApplicationRecord
-  has_many: prompttag
+  has_many :prompttag
 end

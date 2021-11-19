@@ -1,4 +1,4 @@
 class PromptTag < ApplicationRecord
-  belongs_to: prompt
-  belongs_to: tag
+  belongs_to :prompt
+  belongs_to :tag
 end
