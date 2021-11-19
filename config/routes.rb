@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "/prompts" => "prompts#index"
+  get "/prompts/:id" => "prompts#show"
+  post "/prompts" => "prompts#create"
+  patch "/prompts/:id" => "prompts#update"
+  delete "/prompts/:id" => "prompts#destroy"
 end

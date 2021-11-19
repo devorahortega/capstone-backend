@@ -1,0 +1,20 @@
+### Creates a New Prompt
+POST http://localhost:3000/prompts.json
+Content-Type: application/json
+
+{
+  "title": "Phantom",
+  "content": "After moving into a house you discover that it is haunted."
+}
+
+### Updates a prompt
+PATCH http://localhost:3000/prompts/4.json
+Content-Type: application/json
+
+{
+  "title": "This is a Test",
+  "content": "While creating the backend for a website you are forced to run dozens of tests to make sure everything works."
+}
+
+### Deletes a prompt
+DELETE http://localhost:3000/prompts/5.json
