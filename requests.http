@@ -27,5 +27,15 @@ Content-Type: application/json
   "first_name": "Frank",
   "last_name": "Doe",
   "username": "fradoe",
-  "password_digest": "password"
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Creates a New Session
+POST http://localhost:3000/localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "username": "devort",
+  "password": "password"
 }
