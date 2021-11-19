@@ -18,3 +18,14 @@ Content-Type: application/json
 
 ### Deletes a prompt
 DELETE http://localhost:3000/prompts/5.json
+
+### Creates a New User
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "first_name": "Frank",
+  "last_name": "Doe",
+  "username": "fradoe",
+  "password_digest": "password"
+}

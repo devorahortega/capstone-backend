@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 2021_11_19_183945) do
   create_table "prompts", force: :cascade do |t|
     t.string "title"
     t.string "content"
-    t.integer "prompt_tag_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   post "/prompts" => "prompts#create"
   patch "/prompts/:id" => "prompts#update"
   delete "/prompts/:id" => "prompts#destroy"
+
+  post "/users" => "users#create"
 end
