@@ -1,6 +1,6 @@
 ### Creates a New Prompt
 POST http://localhost:3000/prompts.json
-Authorization: bearer  eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzc4NjY3OTZ9.MeMgdS557iQcO4oiumyNPzrP8Wvoea0rrgI6PCCeHXc
+Authorization: bearer  eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2Mzc4NzEzNjN9.LpRSgrEJiIwes4KDDaL4rLUfLUuBuSNbhrcJN3P_GiE
 Content-Type: application/json
 
 {
@@ -9,8 +9,8 @@ Content-Type: application/json
 }
 
 ### Updates a prompt
-PATCH http://localhost:3000/prompts/4.json
-Authorization: bearer  eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzc4NjY3OTZ9.MeMgdS557iQcO4oiumyNPzrP8Wvoea0rrgI6PCCeHXc
+PATCH http://localhost:3000/prompts/7.json
+Authorization: bearer  eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2Mzc4NzEzNjN9.LpRSgrEJiIwes4KDDaL4rLUfLUuBuSNbhrcJN3P_GiE
 Content-Type: application/json
 
 {
@@ -19,17 +19,17 @@ Content-Type: application/json
 }
 
 ### Deletes a prompt
-DELETE http://localhost:3000/prompts/5.json
-Authorization: bearer  eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzc4NjY3OTZ9.MeMgdS557iQcO4oiumyNPzrP8Wvoea0rrgI6PCCeHXc
+DELETE http://localhost:3000/prompts/7.json
+Authorization: bearer  eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2Mzc4NzEzNjN9.LpRSgrEJiIwes4KDDaL4rLUfLUuBuSNbhrcJN3P_GiE
 
 ### Creates a New User
 POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "first_name": "Frank",
-  "last_name": "Doe",
-  "username": "fradoe",
+  "first_name": "Amanda",
+  "last_name": "Hale",
+  "username": "amahal",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -42,3 +42,22 @@ Content-Type: application/json
   "username": "devort",
   "password": "password"
 }
+
+### Shows List of Favorites
+GET http://localhost:3000/favorites.json
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzc4NzIwMDl9.qxSdmDyqgx5M7goZGMifRF-HdTEirqNX8ei2Qj4_4y4
+Content-Type: application/json
+
+### Creates a New Favorite
+POST http://localhost:3000/favorites.json
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzc4NzIwMDl9.qxSdmDyqgx5M7goZGMifRF-HdTEirqNX8ei2Qj4_4y4
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "prompt_id": 2
+}
+
+### Delete a Favorite
+DELETE http://localhost:3000/favorites/1.json 
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzc4NzIwMDl9.qxSdmDyqgx5M7goZGMifRF-HdTEirqNX8ei2Qj4_4y4
