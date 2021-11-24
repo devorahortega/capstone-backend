@@ -14,7 +14,7 @@ class FavoritesController < ApplicationController
     if favorite.save
       render json: favorite
     else
-      render json: { errors: favorite.error.full_messages }, status: 422
+      render json: { errors: favorite.errors.full_messages }, status: 422
     end
   end
 
