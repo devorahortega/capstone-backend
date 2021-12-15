@@ -39,7 +39,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "username": "devort",
+  "username": "ashgre",
   "password": "password"
 }
 
@@ -50,11 +50,11 @@ Content-Type: application/json
 
 ### Creates a New Favorite
 POST http://localhost:3000/favorites.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzc4NzIwMDl9.qxSdmDyqgx5M7goZGMifRF-HdTEirqNX8ei2Qj4_4y4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2Mzk2ODA0MDB9.hVyj667K76UN9R8iyNoDisyhX6mKXYkJxDmdg6NJQPo
 Content-Type: application/json
 
 {
-  "prompt_id": 6
+  "prompt_id": 2
 }
 
 ### Delete a Favorite
