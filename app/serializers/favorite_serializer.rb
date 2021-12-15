@@ -1,5 +1,6 @@
 class FavoriteSerializer < ActiveModel::Serializer
-  attributes :id, :user_id, :prompt_id
+  attributes :id
 
-  has_many :prompts
+  belongs_to :user
+  belongs_to :prompt
 end
