@@ -39,13 +39,13 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "username": "ashgre",
+  "username": "devort",
   "password": "password"
 }
 
 ### Shows List of Favorites
 GET http://localhost:3000/favorites.json
-Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzc4NzIwMDl9.qxSdmDyqgx5M7goZGMifRF-HdTEirqNX8ei2Qj4_4y4
+Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzk2ODQ3MTB9.Lj8Hf0pij2mQTH13zaRdcMHpdYuucZMZrHGFh2rb7w4
 Content-Type: application/json
 
 ### Creates a New Favorite
