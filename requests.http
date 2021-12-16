@@ -58,5 +58,4 @@ Content-Type: application/json
 }
 
 ### Delete a Favorite
-DELETE http://localhost:3000/favorites/5.json 
-Authorization: bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mzc4NzIwMDl9.qxSdmDyqgx5M7goZGMifRF-HdTEirqNX8ei2Qj4_4y4
+DELETE http://localhost:3000/favorites/6.json 
