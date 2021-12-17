@@ -50,11 +50,11 @@ Content-Type: application/json
 
 ### Creates a New Favorite
 POST http://localhost:3000/favorites.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE2Mzk2ODA0MDB9.hVyj667K76UN9R8iyNoDisyhX6mKXYkJxDmdg6NJQPo
 Content-Type: application/json
 
 {
-  "prompt_id": 2
+  "user_id": 1,
+  "prompt_id": 4
 }
 
 ### Delete a Favorite

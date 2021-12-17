@@ -8,7 +8,7 @@ class FavoritesController < ApplicationController
 
   def create
     favorite = Favorite.new(
-      user_id: current_user.id,
+      user_id: params["user_id"],
       prompt_id: params["prompt_id"],
     )
     if favorite.save
