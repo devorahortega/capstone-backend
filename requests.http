@@ -9,12 +9,11 @@ Content-Type: application/json
 }
 
 ### Updates a prompt
-PATCH http://localhost:3000/prompts/7.json
-Authorization: bearer  eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2Mzc4NzEzNjN9.LpRSgrEJiIwes4KDDaL4rLUfLUuBuSNbhrcJN3P_GiE
+PATCH http://localhost:3000/prompts/8.json
 Content-Type: application/json
 
 {
-  "title": "This is a Test",
+  "title": "This Test",
   "content": "While creating the backend for a website you are forced to run dozens of tests to make sure everything works."
 }
 
