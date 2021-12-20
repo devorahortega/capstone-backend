@@ -53,7 +53,7 @@ Content-Type: application/json
 
 {
   "user_id": 1,
-  "prompt_id": 4
+  "prompt_id": 6
 }
 
 ### Delete a Favorite
