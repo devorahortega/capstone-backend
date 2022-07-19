@@ -1,9 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+PROMPTLY BACKEND
 
-Things you may want to cover:
+This is the backend database of my writing prompt website, this is where all the prompts, ideas and users are stored as well as the place where sessions and jwt are created and stored. It also creates the associations between the models (ex. ideas and prompts or prompts and users), allowing us to pull up all the prompts created by one user. 
+
+
+
+Technologies used in the creation of this database:
 
 * Ruby version
 
@@ -21,4 +24,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+
+
+Any questions? Reach out to me at:
+
+LinkedIn at https://www.linkedin.com/in/devorahortega/
